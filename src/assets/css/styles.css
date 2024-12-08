@@ -357,6 +357,11 @@ header {
     padding: 6rem 0;
 }
 
+.logo-gap {
+    gap: 1.5rem;
+}
+
+
 .logotypes {
     display: flex;
     align-items: center;
