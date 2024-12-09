@@ -12,7 +12,7 @@ const Main = () => {
                <div className="main-content">
                   <div className="main-text">
                      <h1>Manage All Your Money in One App</h1>
-                     <p>We offer you a new generation of the mobile banking. <br /> Save, spend & manage money in your pocket.</p>
+                     <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
                         
                      <div className="download-app-buttons">
                         <div className="store-button" role="button">

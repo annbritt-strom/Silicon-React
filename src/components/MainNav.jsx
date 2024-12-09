@@ -15,7 +15,7 @@ const MainNav = () => {
                <div className="theme-toggle">
                   <p>Dark Mode</p>
                   <label className="toggle">
-                        <input type="checkbox" />
+                        <input type="checkbox" id="darkmode-toggle" />
                         <span className="slider"></span>
                   </label>
                </div>
