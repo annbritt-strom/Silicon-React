@@ -1005,10 +1005,6 @@ header {
     .form-input {
         border-radius: .5em 0 0 .5em;
     }
-    
-    .subscribe-btn {
-        border-radius: 0 .5em .5em 0;
-    }
 }
 
 .form-input {
@@ -1021,7 +1017,7 @@ header {
     background-color: var(--form-background);
 }
 
-.subscribe-btn {
+#submit-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1030,7 +1026,9 @@ header {
     color: #ffffff;
     background-color: var(--brand-primary);
     padding: 1rem 1.5rem ;
+    border-radius: 0 .5em .5em 0;
     border: none;
+    cursor: pointer;
 }
 
 /* FOOTER START */
