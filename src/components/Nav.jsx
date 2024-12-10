@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HeaderImg from '../assets/imgs/header/silicon-logo.svg'
 import HumanIcon from '../assets/imgs/header/human-icon.svg'
 
-const MainNav = () => {
-  return (
+const Nav = () => {
+
+   const [isDarkMode, setIsDarkMode] = useState(false);
+
+   const toggleDarkMode = () => {
+      const newIsDarkMode = !isDarkMode;
+      setIsDarkMode(newIsDarkMode)
+
+      if (newIsDarkMode) {
+         document.documentElement.classList.add('dark')
+      } else {
+         document.documentElement.classList.remove('dark')
+      }
+   }
+
+   return (
       <div className="container">
          <nav className="main-nav">
             <div className="left-nav">
@@ -20,8 +34,8 @@ const MainNav = () => {
                <div className="theme-toggle">
                   <p>Dark Mode</p>
                   <label className="toggle">
-                        <input type="checkbox" id="darkmode-toggle" />
-                        <span className="slider"></span>
+                     <input type="checkbox" id="darkmode-toggle" checked={isDarkMode} onChange={toggleDarkMode}  />
+                     <span className="slider"></span>
                   </label>
                </div>
 
@@ -31,7 +45,7 @@ const MainNav = () => {
             </div>
          </nav>
       </div>
-  )
+   )
 }
 
-export default MainNav
+export default Nav

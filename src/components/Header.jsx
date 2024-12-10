@@ -1,6 +1,6 @@
 import React from 'react'
-import MainNav from './MainNav'
-import Main from './Main'
+import MainNav from './Nav'
+import Main from './Hero'
 
 const Header = () => {
   return (

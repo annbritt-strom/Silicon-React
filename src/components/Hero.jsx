@@ -5,7 +5,7 @@ import GetItOn from '../assets/imgs/header/get-it-on.svg'
 import Chevron from '../assets/imgs/common/chevron-down.svg'
 import MainPhones from '../assets/imgs/header/main-phones.svg'
 
-const Main = () => {
+const Hero = () => {
   return (
       <main>
         <div className="container">
@@ -49,4 +49,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Hero

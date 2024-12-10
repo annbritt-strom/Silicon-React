@@ -39,6 +39,7 @@
     --img-filter-invert: none;
     --store-invert: none;
     --faq-accordion: #F3F6FF;
+    --accordion-invert: brightness(0.8);
     --contact-border: #E2E5F1;
     
     --newsletter-background: #B4B7C9;
@@ -68,6 +69,7 @@
     --img-filter-invert: invert();
     --store-invert: brightness(0.2);
     --faq-accordion: #ffffff0A;
+    --accordion-invert: brightness(8);
     --contact-border: #ffffff26;
 
     --logotype-border-color: #ffffff26;
@@ -913,10 +915,6 @@ header {
         font-weight: 400;
         color: var(--primary-font-color);
     }
-
-    img {
-        filter: brightness(100);
-    }
     
     .active {
         background-color: var(--brand-primary);
@@ -925,8 +923,8 @@ header {
         
         img {
             transform: scaleY(-1);
+            filter: brightness(100);
         }
-
     }
 }
 
@@ -962,6 +960,10 @@ header {
         &:hover {
             cursor: pointer;
         }
+
+        img {
+            filter: var(--accordion-invert);
+        }
 }
 
 /* FAQ END */
@@ -995,8 +997,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
      
     width: 29.5rem;
+
+    span {
+        position: absolute;
+        top: 4.5rem;
+        left: -2rem;
+        color: rgb(200, 18, 18);
+        font-size: 1rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
 }
 
 .input-group {
