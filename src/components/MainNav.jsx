@@ -7,8 +7,13 @@ const MainNav = () => {
       <div className="container">
          <nav className="main-nav">
             <div className="left-nav">
-               <a href="index.html"><img src={HeaderImg} /></a>
-               <a href="#features" className="navigation-text"><p>Features</p></a>
+               <div className='silicon-logo'>
+                  <a href="index.html"><img src={HeaderImg} /><p>Silicon</p></a>
+               </div>
+               <div className='selection'>
+                  <a href="#features" className="navigation-text"><p>Contact</p></a>
+                  <a href="#features" className="navigation-text"><p>Features</p></a>
+               </div>
             </div>
 
             <div className="right-nav">

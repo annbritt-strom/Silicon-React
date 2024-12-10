@@ -1,6 +1,7 @@
 import React from 'react'
 import AppStore from '../assets/imgs/header/appstore.svg'
-import GooglePlay from '../assets/imgs/header/googleplay.svg'
+import GooglePlayIcon from '../assets/imgs/header/googleplay-icon.svg'
+import GetItOn from '../assets/imgs/header/get-it-on.svg'
 import Chevron from '../assets/imgs/common/chevron-down.svg'
 import MainPhones from '../assets/imgs/header/main-phones.svg'
 
@@ -16,11 +17,18 @@ const Main = () => {
                         
                      <div className="download-app-buttons">
                         <div className="store-button" role="button">
-                           <a href="https://www.apple.com/app-store/" target="_blank"><img src={AppStore} /></a>
+                           <a className="app-store" href="https://www.apple.com/app-store/" target="_blank"><img src={AppStore} /></a>
                         </div>
                               
                         <div className="store-button" role="button">
-                           <a href="https://play.google.com/store/games?hl=en" target="_blank"><img src={GooglePlay} /></a>
+                           <a className='googleplay' href="https://play.google.com/store/games?hl=en" target="_blank">
+                              <div className='googleplay-icon'>
+                                 <img src={GooglePlayIcon} />
+                              </div>
+                              <div className='googleplay-text'>
+                                 <img src={GetItOn} />
+                              </div>
+                           </a>
                         </div>
                      </div>
                   </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import NotificationBell from '../assets/imgs/newsletter/notification-bell.svg'
+import EmailForm from './EmailForm'
 
 const Newsletter = () => {
   return (
@@ -11,13 +12,7 @@ const Newsletter = () => {
             <h4>Subscribe to our newsletter to stay informed about latest updates</h4>
         </div>
 
-        <div className="subscribe-area">
-            <div className="input-group">
-                <input className="form-input" type="text" placeholder="✉   Your Email" id="newsletter" />
-                <div className="subscribe-btn">Subscribe</div>
-            </div>
-
-        </div>
+        <EmailForm />
     </div>
     </section>
   )
