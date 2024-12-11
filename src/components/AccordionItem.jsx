@@ -4,7 +4,7 @@ import Chevron from '../assets/imgs/common/chevron-down.svg'
 const AccordionItem = ({ item }) => {
    const [isOpen, setIsOpen] = useState(false)
 
-   const toggleActive = () =>  {
+   const toggleActive = () => {
       setIsOpen(!isOpen)
    }
 

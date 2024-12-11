@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+
 :root {
     --font-family: "Manrope", sans-serif;
     --background-primary: #ffffff;
@@ -9,6 +10,7 @@
     --brand-primary: #6366F1;
     --brand-darker-primary: #393bb8;
     --brand-success: #22C55E;
+    --system-warning: #FFBA08;
     --linear-gradient: linear-gradient(to top, rgba(99, 102, 242, 0.10) 0%, rgba(220, 72, 239, .05) 42%, rgba(241, 244, 253, .07) 83%);
 
     --clr-gray-100: #F3F6FF;
@@ -265,6 +267,7 @@ header {
 
         border: none;
         border-radius: var(--brdr-radius-s);
+        transition: 300ms;
 
         p {
             color: #ffffff;
@@ -473,6 +476,7 @@ header {
 .discover-more button {
     &:hover {
         background-color: var(--brand-primary);
+        transition: 200ms;
 
         img {
             filter: brightness(10);
@@ -481,6 +485,10 @@ header {
 
     &:active {
         background-color: var(--brand-darker-primary);
+
+        img {
+            filter: brightness(10);
+        }
     }
 }
 
@@ -823,6 +831,23 @@ header {
         padding-top: 1.5rem;
     }
 }
+
+.star-rating {
+    i {
+        aspect-ratio: 1;
+        height: 0.8125rem;
+        margin: 1px;
+    }
+}
+
+.star-rating i.fa-solid {
+    color: var(--system-warning);
+}
+
+.star-rating i.fa-regular {
+    color: var(--clr-gray-500);
+}
+
 
 .customers {
     display: flex;
