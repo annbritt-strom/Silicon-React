@@ -978,6 +978,11 @@ header {
     border-radius: .5rem;
     box-shadow: 0 4.4px 12px -1px #13102217;
     background-color: var(--panel-background);
+    border: 1px solid transparent;
+}
+
+.panel.active {
+    border: 1px solid #ffffff1b;
 }
 
 .question {
@@ -991,7 +996,7 @@ header {
     grid-template-rows: 0fr;
     overflow: hidden;
 
-    transition: grid-template-rows 500ms;
+    transition: all 500ms;
 }
 
 .active .answer {
